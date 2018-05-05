@@ -45,13 +45,7 @@ h1{
 	margin-left:10%;
 	
 }
-.navbar-default .navbar-nav li{
-	border-right:3px solid #c8c4c4;
-	
-}
-.navbar-default .navbar-nav li:last-child{
-	border-right:0;
-}
+
 
 .navbar-default .navbar-nav li:nth-child(3){
 	padding-left:2%;
