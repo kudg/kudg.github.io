@@ -1,12 +1,15 @@
+<h1>My Skills</h1>
 
-	<h1 class="text-center">My Skills</h1>
-	<br>
-	
-	<div class="row">
-	<div class="col-sm-6">
-		<h3>Front End Development Skills</h3>
+<div class="tab">
+  <button class="tablinks" onclick="mySkill(event,'front')" id="defaultOpen"><h4>Front End Skills </h4></button>
+  <button class="tablinks" onclick="mySkill(event,'back')"><h4>Back End Skills</h4></button>
+  <button class="tablinks" onclick="mySkill(event,'other')"><h4>Other Skills</h4></button>
+</div>
+
+<div id="front" class="tabcontent">
+ <h3>Front End Development Skills</h3>
+	<div class="col-sm-12">
 		<br>
-		
 		<label>HTML &amp; CSS</label>
 		 <div class="progress">
 			<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
@@ -29,8 +32,11 @@
 			</div>
 		</div> 
 	</div>
-	<div class="col-sm-6">
-		<h3>Back End Development Skills</h3>
+	</div>
+
+<div id="back" class="tabcontent">
+  <h3>Back End Development Skills</h3>
+  <div class="col-sm-12">
 		<br>
 		<label>PHP</label>
 		 <div class="progress">
@@ -47,12 +53,37 @@
 			</div>
 		</div>
 	</div>
-	</div>
-	<hr class="h">
-	<div class="col-sm-12">
-		 <button class="collapsible">Open Collapsible</button>
-			<div class="content">
-				<p>Lorem ipsum...</p>
-			</div>
-	</div>
 	
+</div>
+<div id="other" class="tabcontent">
+  <h3>Other Skills</h3>
+  <p>I am fluent in C and C++ languages.</p>
+</div>
+	
+<script>
+	function mySkill(evt, skill) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(skill).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+

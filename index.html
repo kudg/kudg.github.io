@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>ProWeb</title>
 		
-		
+		<meta name="viewport" content="width=device-width initial-scale=1">
 		 <link rel="stylesheet" href="assets/css/bootstrap.css">
 		 <link rel="stylesheet" href="assets/css/font-awesome.css">
 		 <link rel="stylesheet" href="websitefinal.css">
@@ -14,27 +14,10 @@
 		<script src="assets/js/angular.js"></script>
 		<script src="assets/js/route.js"></script>
 		<script src="assets/js/profile.js"></script>
-		
-		<script>
-	var coll = document.getElementsByClassName(" collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
-
-		</script>
 	</head>
 
-	<body ng-app="Myapp">
+	<body ng-app="Myapp" id="pagedata">
+		<header>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -46,6 +29,7 @@ for (i = 0; i < coll.length; i++) {
 				</div>
 				<div class="collapse navbar-collapse" id="mynavbar">
 				<ul class="nav navbar-nav ">
+					
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About Me</a></li>
 					<li><a href="#skill">Skill</a></li>
@@ -56,17 +40,16 @@ for (i = 0; i < coll.length; i++) {
 				</div>	
 			</div>
 		</nav>
-		
-		<div class="container">
-			<div class="row"ng-view>
-			
+		</header>
+		<main>
+			<div class="container">
+				<div class="row"ng-view></div>
 			</div>
-		</div>
-		<footer>
-			<div class="container-fluid">
-			
+		</main>
+			<div class="container-fluid footer">
+				<p>kjgciukbckb
+				csajavchv</p>
 			</div>
-		</footer>
 		
 		
 	</body>
