@@ -5,7 +5,7 @@ body, html{
 }
 
 .navbar{
-	padding:1%;
+	padding:2%;
 	border-radius:0;
 	border:0;
 	border-bottom:2px solid #ddd;
@@ -21,7 +21,7 @@ body, html{
 .navbar-default .navbar-nav li a
 {
 	font-size:120%;
-	font-weight:bold;
+	font-weight:30%;
 	text-transform:uppercase;
 	color:#8d8484;	
 }
@@ -68,6 +68,7 @@ main{
 	height:80px;
 	margin-top:5px;
 	min-height:50px;
+	padding-top:1%;
 	
 }
 
