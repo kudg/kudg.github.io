@@ -1,5 +1,4 @@
-
-		<style>
+<style>
 			body {font-family: "Lato", sans-serif;}
 
 .tablink {
@@ -11,7 +10,7 @@
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 33.3%;
+    width: 32.5%;
 }
 
 .tablink:hover {
@@ -22,17 +21,18 @@
 .tabcontent {
     color: white;
     display: none;
-    padding: 50px;
     text-align: center;
 	width:100%;
+	
+	height:auto;
 }
 
-#London
+#Front
  {
  background-color:#e8ecf1;
  }
-#Paris {background-color:#d2d9e4;}
-#Tokyo {background-color:#d2d9e4;}
+#Back {background-color:#d2d9e4;}
+#Other {background-color:#d2d9e4;}
 
 
 
@@ -50,6 +50,15 @@
   line-height: 30px;
   color: white;
 }
+#myBar1b {
+  width: 10%;
+  height: 30px;
+  background-color: #a39022;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
 #myBar1b {
   width: 10%;
   height: 30px;
@@ -85,6 +94,7 @@
   color: white;
 }
 
+
 .cent{
 	margin-top:3%;
 }
@@ -92,39 +102,86 @@
 .framework{
 	
 }
+
+
 </style>
 
-<div class="col-sm-2 "></div>
-<div class="col-sm-10 ">
-	
-	<button class="tablink" onclick="openCity('London', this, '#a5b4c9')" id="defaultOpen">Front End</button>
-	<button class="tablink" onclick="openCity('Paris', this, '#a5b4c9')">back End</button>
-	<button class="tablink" onclick="openCity('Tokyo', this, '#a5b4c9')">Others</button>
-	
-	<div id="London" class="tabcontent">
-	<div class="row ">
-		<div class="col-sm-3 ">
-			<img src="assets/Images/htmlcss.png" height="100%" width="100%">
-		</div>
-		<div class="col-sm-9 cent">		
-			<div id="myProgress">
-				<div id="myBar1a">10%</div>
+<div class="col-sm-2 well"></div>
+<div class="col-sm-8 well i">
+	<div class="row">
+		<button class="tablink" onclick="openService('Front', this, '#a5b4c9')" id="defaultOpen">Front End</button>
+		<button class="tablink" onclick="openService('Back', this, '#a5b4c9')">back End</button>
+		<button class="tablink" onclick="openService('Other', this, '#a5b4c9')">Others</button>
+	</div>
+	<div class="row tabcontent" id="Front">
+		<div class="col-sm-12">
+			<div class="row well">
+				<div class="col-sm-3">
+					<img src="assets/Images/htmlcss.png" height="80%" width="80%" class="img-responsive center">
+				</div>
+				<div class="col-sm-9 cent">
+					<div id="myProgress">
+						<div id="myBar1a">10%</div>
+					</div>
+				</div>
+			</div>
+			<div class="row well">
+					<div class="col-sm-3">
+						<img src="assets/Images/Javascript.png" height="12%" width="54%" class="img-responsive center">
+					</div>
+					<div class="col-sm-9 cent">		
+						<div id="myProgress">
+							<div id="myBar1b">10%</div>
+						</div>
+					</div>
+			</div>
+			<div class="row well">
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
 			</div>
 		</div>
 	</div>
-	<br>
-	<div class="row ">
-		<div class="col-sm-3">
-			<img src="assets/Images/Javascript.png" height="70%" width="70%">
-		</div>
-		<div class="col-sm-9 cent">		
-			<div id="myProgress">
-				<div id="myBar1b">10%</div>
+	
+	<div class="row tabcontent" id="Back">
+		<div class="col-sm-12">
+			<div class="row well">
+				<div class="col-sm-3">
+					<img src="assets/Images/php7.png" height="40%" width="40%" class="img-responsive center">
+				</div>
+				<div class="col-sm-9 cent">
+					<div id="myProgress">
+						<div id="myBar2a">10%</div>
+					</div>
+				</div>
+			</div>
+			<div class="row well">
+					<div class="col-sm-3">
+						<img src="assets/Images/mysql.png" height="50%" width="50%" class="img-responsive center">
+					</div>
+					<div class="col-sm-9 cent">		
+						<div id="myProgress">
+							<div id="myBar2b">10%</div>
+						</div>
+					</div>
+			</div>
+			<div class="row well">
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
+				<div class="col-sm-2 well"></div>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="col-sm-2 well">
 <script>
-function london() 
+function Front() 
 {
   var elem1 = document.getElementById("myBar1a");   
   var elem2 = document.getElementById("myBar1b");   
@@ -159,36 +216,9 @@ function london()
   }
   
 }
-
 </script>
-	</div>
-
-	<div id="Paris" class="tabcontent">
-		<div class="row ">
-		<div class="col-sm-3 ">
-			<img src="assets/Images/php7.png" height="40%" width="40%" class="img-responsive center">
-		</div>
-		<div class="col-sm-9 cent">		
-			<div id="myProgress" >
-				<div id="myBar2a">10%</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="row ">
-		<div class="col-sm-3">
-			<img src="assets/Images/mysql.png" height="60%" width="60%" class="img-responsive center">
-		</div>
-		<div class="col-sm-9 cent">		
-			<div id="myProgress">
-				<div id="myBar2b">10%</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	
 <script>
-function paris() 
+function Back() 
 {
   var elem1 = document.getElementById("myBar2a");   
   var elem2 = document.getElementById("myBar2b");   
@@ -218,42 +248,9 @@ function paris()
 }
 
 </script>
-</div>
-
-	<div id="Tokyo" class="tabcontent">
-		<br>
-		<div id="myProgress">
-			<div id="myBar3">10%</div>
-		</div>
-
-		<br>
-		
-		<script>
-function tokyo() 
-{
-  var elem = document.getElementById("myBar3");   
-  var width = 10;
-  var id = setInterval(frame, 40);
-  function frame() 
-  {
-    if (width >= 40) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
-
-</script>
-</div>
-
 	
-		
-</div>
-		<script>
-			function openCity(cityName,elmnt,color)
+<script>
+			function openService(serviceName,elmnt,color)
 			{
 				var i, tabcontent, tablinks;
 				
@@ -269,21 +266,21 @@ function tokyo()
 					tablinks[i].style.backgroundColor = "";
 				}
 				
-				document.getElementById(cityName).style.display = "block";
+				document.getElementById(serviceName).style.display = "block";
 				elmnt.style.backgroundColor = color;
 				
 				//----------for progress bar-----------
-				if(cityName=="Paris")
+				if(serviceName=="Back")
 				{
-					paris();
+					Back();
 				}
-				if(cityName=="Tokyo")
+				if(serviceName=="Other")
 				{
-					tokyo();
+					Other();
 				}
-				if(cityName=="London")
+				if(serviceName=="Front")
 				{
-					london();
+					Front();
 				}
 				
 				

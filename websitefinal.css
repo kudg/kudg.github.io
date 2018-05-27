@@ -9,14 +9,14 @@ body, html{
 	border-radius:0;
 	border:0;
 	border-bottom:2px solid #ddd;
-	margin-bottom:5px;
+	
 }
 .navbar-default .navbar-nav li
 {
 	margin:5px;
 }
 .navbar-nav{
-	width:80%;
+	width:70%;
 }
 .navbar-default .navbar-nav li a
 {
@@ -59,16 +59,17 @@ h1{
 	text-align:center;
 	margin-top:0;
 }
+
 main{
 	
 }
 
 .footer{
 	background-color:#efefef;
-	height:80px;
+	height:20vh;
 	margin-top:5px;
 	min-height:50px;
-	padding-top:1%;
+	
 	
 }
 
@@ -115,13 +116,15 @@ p{
 .hero-image {
     
     background-image:url("assets/Images/black.jpg");
-    height:50%;
+    height:40%;
 	width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 	padding-bottom:50%;
+	
+	
 	
 }
 
@@ -257,4 +260,9 @@ p{
     border-left: none;
     height: 400px;
 	
+}
+
+#c{
+	
+	box-sizing: border-box;
 }
