@@ -102,7 +102,48 @@
 .framework{
 	
 }
+<!----------for framework images---------->
 
+.con {
+    position: relative;
+    width: 50%;
+	
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 80px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.con:hover .image {
+  opacity: 0.3;
+}
+
+.con:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+}
 
 </style>
 <h1 class="h1header">Skill</h1>
@@ -135,13 +176,25 @@
 						</div>
 					</div>
 			</div>
-			<div class="row well">
-				<div class="col-sm-2 well"></div>
-				<div class="col-sm-2 well"></div>
-				<div class="col-sm-2 well"></div>
-				<div class="col-sm-2 well"></div>
-				<div class="col-sm-2 well"></div>
-				<div class="col-sm-2 well"></div>
+			<div class="row well ">
+				<h3 class="h1header">Front End Frameworks I know</h3>
+				<div class="col-sm-2 well con">
+					<img src="assets/Images/bootstrap.png" alt="b" class="image">
+					 <div class="middle">
+						<div class="text">50%</div>
+					</div>
+				</div>
+				<div class="col-sm-2 well con">
+					<img src="assets/Images/wordpress.png" alt="b" class="image">
+					 <div class="middle">
+						<div class="text">10%</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-2 well con"></div>
+				<div class="col-sm-2 well con"></div>
+				<div class="col-sm-2 well con"></div>
+				<div class="col-sm-2 well con"></div>
 			</div>
 		</div>
 	</div>
@@ -169,8 +222,19 @@
 					</div>
 			</div>
 			<div class="row well">
-				<div class="col-sm-2 well"></div>
-				<div class="col-sm-2 well"></div>
+				<h3 class="h1header">Back End Frameworks I know</h3>
+				<div class="col-sm-2 well con">
+					<img src="assets/Images/codeigniter.png" alt="b" class="image">
+					 <div class="middle">
+						<div class="text">30%</div>
+					</div>
+				</div>
+				<div class="col-sm-2 well con">
+					<img src="assets/Images/drupal.png" alt="b" class="image">
+					 <div class="middle">
+						<div class="text">20%</div>
+					</div>
+				</div>
 				<div class="col-sm-2 well"></div>
 				<div class="col-sm-2 well"></div>
 				<div class="col-sm-2 well"></div>
