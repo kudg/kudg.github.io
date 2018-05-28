@@ -107,7 +107,10 @@ p{
 	padding:60px;
 	min-height:20px;
 }
-
+.h1header{
+	font-family: "Impact", Times, serif;
+	font-size:300%;
+}
 /*-------------------------------------------- Home  page css ----------------------------------------*/
 
 
@@ -149,12 +152,77 @@ p{
 
 /*--------------------------------------about page css---------------------------------*/
 .center{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    	
+	display: inline-block;
+    margin-left: 3%;
+    
+    float:left;
+}
+.d{
+	clear:both;
+}
+.lmargin1{
+	margin-left:2%;
+	float:left;
+	display:inline-block;
+	width:60%;
+	text-align:justify;
+	font-weight:normal;
+	font-size:20px;
+	font-family: "Garamond", Times, serif;
+}
+.lmargin2{
+	margin-left:2%;
+	float:left;
+	display:inline-block;
+	width:60%;
+	text-align:justify;
+	font-weight:normal;
+	font-size:20px;
+	font-family: "Garamond", Times, serif;
 }
 
+
+ 
+ @media screen and (max-width: 768px)
+ {
+    .center 
+	{
+		width: 40%; 
+		margin-left:3%;
+		margin-right:auto;
+		}
+    .lmargin1 
+	{
+		margin-left:3%;
+		display:inline-block;
+		width:50%;
+	}
+	.lmargin2 
+	{	
+		margin-left:3%;
+		display:inline-block;
+		width:100%;
+	}
+ }
+ 
+ @media screen and (max-width: 350px)
+ {
+    .center 
+	{
+		width: 95%; 
+		display:inline-block;
+		}
+    .lmargin1 
+	{
+		display:inline-block;
+		width:100%;
+	}
+	.lmargin2 
+	{
+		display:inline-block;
+		width:100%;
+	}
+ }
 #icon{
 	text-align:center;
 }
